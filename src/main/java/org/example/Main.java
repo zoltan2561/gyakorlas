@@ -30,7 +30,7 @@ public class Main {
 //        System.out.println(szam[5]);
 //
 
-      //  int[][] szam = new int[10][10];
+        //  int[][] szam = new int[10][10];
 
 //////////////////////////////////////////////////////////////////////////////CONTROLFLOW//////////////////////
 //        int honapnap = 4;
@@ -103,12 +103,25 @@ public class Main {
 //      System.out.print(nev);
 //      System.out.println();
 //  }
+////////////////////////////////////////////////////////////////////////////
+
+//        System.out.println("  A B C D E F G H ");      //////////////////////////////tábla
+//        for(int i=0; i<8; i++){
+//            System.out.print((char)('A'+i)+" ");
+//            for(int j=0; j<8; j++){
+//                System.out.print("- ");
+//            }
+//            System.out.println();
+//        }
 
 
 
 
 
 
+
+
+
+        /////////////////////////////////////////////////////////////
     }
-
 }
