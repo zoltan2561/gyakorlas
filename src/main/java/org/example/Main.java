@@ -149,6 +149,7 @@ public class Main {
              penzosszeg = scanner.nextInt();
 
         }
+        System.out.println("a megadott összeg:"+penzosszeg);
         int[]cimletek = {20_000,10_000,5_000,2_000,1_000,500,200,100,50,20,10,5};
                int mardek=penzosszeg;
                int[]darabok=new int[cimletek.length];
@@ -158,21 +159,24 @@ public class Main {
                    mardek=mardek%cimletek[i];
                }
 
-               System.out.println("20 ezresből:"+darabok[0]);
-               System.out.println("10 ezresből:"+darabok[1]);
-               System.out.println("5 ezresből:"+darabok[2]);
-        System.out.println("2 ezresből:"+darabok[3]);
-        System.out.println("ezresből:"+darabok[4]);
-        System.out.println("ötszászasból:"+darabok[5]);
-        System.out.println("kétszázasból:"+darabok[6]);
-        System.out.println("százasból:"+darabok[7]);
-        System.out.println("ötvenesből:"+darabok[8]);
-        System.out.println("huszasból:"+darabok[9]);
-        System.out.println("tizesből:"+darabok[10]);
-        System.out.println("ötösből:"+darabok[11]);
-
-
-
+//               System.out.println("20 ezresből:"+darabok[0]);
+//               System.out.println("10 ezresből:"+darabok[1]);
+//               System.out.println("5 ezresből:"+darabok[2]);
+//        System.out.println("2 ezresből:"+darabok[3]);
+//        System.out.println("ezresből:"+darabok[4]);
+//        System.out.println("ötszászasból:"+darabok[5]);
+//        System.out.println("kétszázasból:"+darabok[6]);
+//        System.out.println("százasból:"+darabok[7]);
+//        System.out.println("ötvenesből:"+darabok[8]);
+//        System.out.println("huszasból:"+darabok[9]);
+//        System.out.println("tizesből:"+darabok[10]);
+//        System.out.println("ötösből:"+darabok[11]);
+        for(int i=0;i< cimletek.length;i++)                              ///////forciklussal
+        {
+            if(darabok[i]>0) {
+                System.out.println(cimletek[i] + ":" + darabok[i] + " db");
+            }
+        }
         /////////////////////////////////////////////////////////////
     }
     /////main end
