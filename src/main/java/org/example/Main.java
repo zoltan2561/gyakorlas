@@ -1,7 +1,11 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
 //       int number=2+3*4;
 //        System.out.println(number);
 //boolean b= number+10<100;
@@ -114,14 +118,62 @@ public class Main {
 //            System.out.println();
 //        }
 
+//        System.out.println("adjon meg egy szamot:");
+//
+//       int szam = scanner.nextInt();
+//        System.out.println("a szamod:"+ szam);
+//        System.out.println("adjon meg egy  lebegős szamot:");
+//        double mydoublenumber = scanner.nextDouble();
+//        System.out.println("a szam:"+mydoublenumber);
+
+//        System.out.print("adjon meg szöveget:");
+//        String text = scanner.nextLine();
+//        System.out.println("a szöveg: "+text);
 
 
+///////////////////////////////////////////////////////////////////// 2számszorzása
+//int c=0;
+//        System.out.print("A:");
+//        int a =scanner.nextInt();
+//        System.out.print("B:");
+//        int b = scanner.nextInt();
+//c=a*b;
+//        System.out.println("a szamok szorzata:"+c);
+//
+//
+////////////////////////////////////////////////////////////////////////////// POSZTMODERN ATM
+        System.out.print("adjaon meg egy összeget:");
+        int penzosszeg = scanner.nextInt();
+        while (penzosszeg<0 || penzosszeg%5!=0){
+            System.out.print("nem jo szam,adja meg ujra:");
+             penzosszeg = scanner.nextInt();
 
+        }
+        int[]cimletek = {20_000,10_000,5_000,2_000,1_000,500,200,100,50,20,10,5};
+               int mardek=penzosszeg;
+               int[]darabok=new int[cimletek.length];
+               for(int i=0;i<cimletek.length;i++)
+               {
+                   darabok[i]=mardek/cimletek[i];
+                   mardek=mardek%cimletek[i];
+               }
 
-
+               System.out.println("20 ezresből:"+darabok[0]);
+               System.out.println("10 ezresből:"+darabok[1]);
+               System.out.println("5 ezresből:"+darabok[2]);
+        System.out.println("2 ezresből:"+darabok[3]);
+        System.out.println("ezresből:"+darabok[4]);
+        System.out.println("ötszászasból:"+darabok[5]);
+        System.out.println("kétszázasból:"+darabok[6]);
+        System.out.println("százasból:"+darabok[7]);
+        System.out.println("ötvenesből:"+darabok[8]);
+        System.out.println("huszasból:"+darabok[9]);
+        System.out.println("tizesből:"+darabok[10]);
+        System.out.println("ötösből:"+darabok[11]);
 
 
 
         /////////////////////////////////////////////////////////////
     }
+    /////main end
 }
